@@ -61,7 +61,7 @@
             let [azul, setAzul] =  React.useState(255);
 
             return (<>
-                        <div className="color" style={ { backgroundColor :  `rgb(${[rojo,verde,azul].join(",")})` }} ><img src="pngtree-cute-eyes-and-mouth-cartoon-png-image_9034681.png" alt="" /></div>
+                        <div className="color" style={ { backgroundColor :  `rgb(${[rojo,verde,azul].join(",")})` }} ><img src="cartoon-face.png" alt="" /></div>
                         { [setRojo, setVerde, setAzul].map((fun,i)=> {
                             return <input type="range" min="0" max="255" defaultValue="0" onChange={ e => fun(e.target.value) } />
                         }) }
